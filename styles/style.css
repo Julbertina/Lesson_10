@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: rgb(90, 88, 88);
+    height: 70px;
+}
+
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 25px;
+}
+
+.item {
+    float: left;
+    position: relative;
+}
+
+hr {
+    border: 2px solid  rgb(49, 188, 243);
+    margin: 0;
+}
+
+span::after {
+    float: right;
+    content: "+";
+}
+
+.list-drop {
+    position: absolute;
+    display: none;
+}
+
+.drop-link , .drop-link-2 {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(49, 188, 243);
+    width: 250px;
+    display: block;
+    padding: 25px;
+}
+
+.item:hover .list-drop {
+    display: block;
+}
+
+.item:hover .link {
+    background-color: rgb(49, 188, 243);
+}
+
+.list-drop-2 {
+    display: none;
+}
+
+.drop-item:hover .list-drop-2 {
+    display: block;
+}
+
+.drop-item {
+    position: relative;
+}
+
+.list-drop-2 {
+    position: absolute;
+    left: 250px;
+    top: 0;
+}
+
+li:hover > a {
+    background-color: rgb(109, 214, 255);
+}
